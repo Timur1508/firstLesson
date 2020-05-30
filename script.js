@@ -12,12 +12,58 @@ let appData = {
 	savings: false
 };
 
-let a1 = prompt("Введите обязательную статью расходов в этом месяце", ''),
-	a2 = prompt("Во сколько обойдется?", ''),
-	a3 = prompt("Введите обязательную статью расходов в этом месяце", ''),
-	a4 = prompt("Во сколько обойдется?", '');
 
-appData.expenses.a1 = a2;
-appData.expenses.a3 = a4;
+for (let i = 0; i < 2; i++) {
+	let a = prompt("Введите обязательную статью расходов в этом месяце", ''),
+	b = prompt("Во сколько обойдется?", '');
+
+	appData.expenses[a] = b;
+}
 
 alert(appData.budget / 30);
+
+//let num = 80;
+
+//if (num < 49) {
+//	console.log("False")
+//} else if (num > 100) {
+//	console.log("More")
+//} else {
+//	console.log(true)
+//}
+
+//switch (num) {
+//	case num < 49:
+//		console.log("false");
+//		break;
+//	case num > 100:
+//		console.log("more");
+//		break;
+//	case 50:
+//		console.log(true);
+//		break;
+//	default:
+//		console.log("error");
+//		break;
+//}
+
+
+
+
+//let num = 40;
+//while (num < 55) {
+//	console.log(num);
+//	num++;
+//}
+//do {
+//	console.log(num);
+//	num++;
+//}	
+//while (num <55);
+//
+//for (let i = 1; i < 8; i++) {
+//	if (i == 6) {
+//		continue;
+//	}
+//	console.log(i);
+//}
